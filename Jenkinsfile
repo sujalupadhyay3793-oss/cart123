@@ -13,7 +13,7 @@ pipeline {
         stage('clone') {
             steps {
                 echo 'Hello World'
-                git branch: 'main', url: 'https://github.com/mantu0tech/weather_app_node_js.git'
+                git branch: 'main', url: 'https://github.com/sujalupadhyay3793-oss/cart123.git'
             }
         }
          stage('build') {
@@ -25,7 +25,7 @@ pipeline {
          stage('deplyo') {
             steps {
                 echo 'Hello World'
-                sh 'npm start'
+                sh 'npm run build'
             }
         }
     }
